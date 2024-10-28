@@ -1,0 +1,42 @@
+\documentclass{BachelorThesis}
+\BTsetup{
+    info={
+        title={XXXXX{\textcolor{red}{（论文题目，楷体一号，居中）}}},
+        author={袁俊},
+        studentnumber={2021300002080},
+        major={物理学},
+        college={物理科学与技术学院},
+        supervisor={XXX}
+    }
+}
+
+\begin{document}
+\maketitle
+
+\newpage
+
+\pagenumbering{arabic} %设置阿拉伯数字页码
+\tableofcontents
+
+\thispagestyle{empty}
+
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\zihao{5} \songti 武\quad 汉\quad 大\quad 学\quad 本\quad 科\quad 毕\quad 业\quad 论\quad 文\quad （ \quad 设\quad 计 \quad ）}
+\fancyfoot[C]{\zihao{5} \songti \thepage }
+\renewcommand{\headrulewidth}{1pt}
+\setcounter{page}{1}
+
+\input{Pages/section1}
+\clearpage
+\input{Pages/Conclusion}
+\clearpage
+\addcontentsline{toc}{section}{参考文献}%将摘要放进目录
+\bibliographystyle{gbt7714-2005-whu-numerical}
+\bibliography{reference}
+\clearpage
+\input{Pages/Thanks}
+\clearpage
+\input{Pages/Appendix}
+\end{document}
